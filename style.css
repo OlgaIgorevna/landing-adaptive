@@ -89,25 +89,27 @@ header .logo img {
 }
 
 header .menu {
-  float: right;
+  background: black;
+  margin-top: 15px;
   display: none;
 }
 
+header .menu.active {
+  display: block;
+}
+
 header .menu .item {
-  float: right;
-  padding: 10px;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
 }
-
-header .menu .item:first-child {
-  padding-right: 0;
+header .menu .item a {
+  display: block;
+  padding: 10px;
 }
 
-.item.active {
-  background-color: #5dbbc1;
-  border-radius: 5px;
+.item.active a {
+  border-bottom: 1px solid #5dbbc1;
 }
 
 header .menu-hamburger {
@@ -125,7 +127,7 @@ header .menu-hamburger .icon-bar {
   display: block;
 }
 
-#hamburger {
+#hamburger-btn {
   background: none;
   border: none;
   padding: 0;
@@ -492,7 +494,20 @@ footer .logo img {
     padding-top: 60px;
   }
   header .menu {
-    display: block;
+    float: right;
+    background: transparent;
+    margin-top: 0;
+    display: block !important;
+  }
+  header .menu .item {
+    display: inline-block;
+  }
+  header .menu .item.active a {
+    background: #5dbbc1;
+    border-radius: 5px;
+  }
+  header .headline {
+    float: left;
   }
   header .menu-hamburger {
     display: none;
@@ -514,7 +529,7 @@ footer .logo img {
     top: -20px;
   }
   header .container {
-    max-height: 500px;
+    max-height: 445px;
   }
 
   .services .title {

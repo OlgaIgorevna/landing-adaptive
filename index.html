@@ -12,24 +12,26 @@
     <div class="container clearfix">
       <div class="headline clearfix">
         <a name="home"></a>
+        <div class="menu-hamburger">
+          <button type="button" id="hamburger-btn">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
         <div class="logo">
           <img src="img/logo.png">
         </div>
-        <div class="menu clearfix">
-          <div class="item"><a href="#contact">contact</a></div>
-          <div class="item"><a href="#gallery">gallery</a></div>
-          <div class="item"><a href="#about">about</a></div>
-          <div class="item"><a href="#service">service</a></div>          
-          <div class="item active"><a href="#home">home</a></div>
-        </div>
-        <div class="menu-hamburger">
-          <button type="button" id="hamburger">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-           </button>
-        </div>
       </div>
+      <div id="menu" class="menu clearfix">
+        <div class="item active"><a href="#home">home</a></div>
+        <div class="item"><a href="#service">service</a></div>          
+        <div class="item"><a href="#about">about</a></div>
+        <div class="item"><a href="#gallery">gallery</a></div>
+        <div class="item"><a href="#contact">contact</a></div>
+      </div>
+    </div>
+    <div class="container clearfix">
       <div class="text-block">
         <div class="title">
           <span class="highlight"> trusted </span> by every1
@@ -62,6 +64,7 @@
           </div>
           <button type="submit" class="dark">Send</button>
         </form>
+      </div>
       </div>
     </div>
   </header>
@@ -262,6 +265,8 @@
       </div>
     </div>
   </footer>
+
+  <script src='./main.js'></script>
 </body>
 
 </html>
