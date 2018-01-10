@@ -282,7 +282,7 @@ header .text-block .title {
 
 .popular::before {
   display: block;
-  content: "";  
+  content: "";
   border-radius: 5px 0 0 0;
   width: 80px;
   height: 80px;
@@ -297,18 +297,33 @@ header .text-block .title {
 
 .popular::after {
   display: block;
-  content: "popular";  
-
-/*
-  width: 80px;
-  height: 80px;
-*/
-  
+  content: "popular";
   position: absolute;
   left: 2px;
   top: 18px;
   z-index: 101;
-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/*------------------------------------------------------------------------------FOOTER---------------*/
+
+footer {
+  background-color: #130e27;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+footer .text {
+  text-align: center;
+}
+
+footer .logo img {
+  display: block;
+  max-width: 130px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -382,6 +397,19 @@ transform: rotate(-45deg);
     padding-left: 10px;
     padding-right: 10px;
     max-width: 220px;
+  }
+  footer .text {
+    float: left;
+    width: 70%;
+    text-align: left;
+  }
+  footer .logo {
+    float: right;
+    width: 30%;
+  }
+  footer .logo img {
+    margin-top: 0;
+    margin-right: 0;
   }
 
 }
